@@ -4,10 +4,10 @@ menu_order: 0
 enterprise: 'no'
 ---
 
-Use the following command from the DC/OS CLI to install Zeppelin:
+No need to build package! Use marathon to add app like below
  
 ```
-$ dcos package install zeppelin
+./dcos marathon app add zeppelin-0.7.0.json
 ```
 
 **Note:** DC/OS Zeppelin cannot be installed in the `strict` [security mode](https://docs.mesosphere.com/1.8/administration/installing/custom/configuration-parameters/#security) of Enterprise DC/OS.
