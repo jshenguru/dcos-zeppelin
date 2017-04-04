@@ -1,6 +1,6 @@
 # zeppelin-docker
 
-This is the docker build for Zeppelin on DC/OS.
+This is the docker build for Zeppelin on DC/OS, as well as the JSON file to add Marathon app.
 
 ## Documentation
 
