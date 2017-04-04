@@ -1,4 +1,4 @@
-# zeppelin-docker
+# dcos-zeppelin docker
 
 This is the docker build for Zeppelin on DC/OS, as well as the JSON file to add Marathon app.
 
@@ -9,6 +9,7 @@ There is no need to build a package for DC/OS 1.8.0. All you need is a docker im
 ```sh
 ./dcos marathon app add <PATH_TO_THE_CLONED_DIR>/config/zeppelin-0.7.0.json
 ```
+A custom HDFS config can be passed through spark.mesos.uris. This moves those config files into the standard directory. In DCOS, the CLI reads the "SPARK_HDFS_CONFIG_URL" marathon lable in order to set spark.mesos.uris.
 
 ## Building
 
