@@ -15,7 +15,7 @@ RUN apt-get update && \
 ENV HADOOP_CONF_DIR /etc/hadoop
 # ADD ./conf/hadoop/hdfs-site.xml /etc/hadoop/hdfs-site.xml
 # ADD ./conf/hadoop/core-site.xml /etc/hadoop/core-site.xml
-# ADD ./conf/hadoop/mesos-site.xml /etc/hadoop/mesos-site.xml
+ADD ./conf/hadoop/mesos-site.xml /etc/hadoop/mesos-site.xml
 
 # java
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64
