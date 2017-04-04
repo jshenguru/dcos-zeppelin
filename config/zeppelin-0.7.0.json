@@ -29,7 +29,7 @@
   "maxLaunchDelaySeconds": 3600,
   "container": {
     "docker": {
-      "image": "jshenguru/zeppelin:0.7.0",
+      "image": "jshenguru/dcos-zeppelin:0.7.0",
       "forcePullImage": false,
       "privileged": false,
       "network": "HOST"
