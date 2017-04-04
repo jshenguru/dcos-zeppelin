@@ -4,17 +4,18 @@ This is the docker build for Zeppelin on DC/OS, as well as the JSON file to add 
 
 ## Documentation
 
-There is no need to build a package for DC/OS 1.8.0. All you need is a docker image, such as jshenguru/zeppelin:0.7.0, and a json file, then run command like below
+There is no need to build a package for DC/OS 1.8.0. All you need is a docker image, such as jshenguru/dcos-zeppelin:0.7.0, and a json file (located in the config folder of this fork), then run command like below
 
 ```sh
-./dcos marathon app add zeppelin-0.7.0.json
+./dcos marathon app add <PATH_TO_THE_CLONED_DIR>/config/zeppelin-0.7.0.json
 ```
 
 ## Building
 
+In stead of using my pre-built docker image, you can add your own custom stuff to the Dockerfile and build your own.
 ```sh
 cd docker
-docker build -t jshenguru/zeppelin:<version> .
+docker build -t jshenguru/dcos-zeppelin:<version> .
 ```
 You can change the "jshenguru" to your own Docker hub name.
 
